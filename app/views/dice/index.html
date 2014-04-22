@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Main page in Dice/roll</title>
+</head>
+<body>
+
+  <h1>This is index page for Wk3-Homework / Dice roll</h1>
+
+  <p>Please <a href="text" target="_blank">click here</a> for text-only dice.</p>
+  <p>Please <a href="img" target="_blank">click here</a> for img-only dice.</p>
+  <% dice1 = rand(1..6) %>
+  <% dice2 = rand(1..6) %>
+  <p>Dice 1 = <%= dice1 %></p>
+  <p>Dice 2 = <%= dice2 %></p>
+  <p><img src="http://www.kiei925.com/images/dice/<%= dice1 %>.png" />  <img src="http://www.kiei925.com/images/dice/<%= dice2 %>.png" /></p>
+</body>
+</html>

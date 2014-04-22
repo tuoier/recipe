@@ -1,4 +1,12 @@
 Recipe::Application.routes.draw do
+
+  get "/hello" => "h1/index"
+  get "/dice/roll" => "dice/index"
+  get "/dice/text" => "dice/text"
+  get "/dice/img" => "dice/img"
+  get "/books/list" => "books/list"
+
+end
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
@@ -53,4 +61,3 @@ Recipe::Application.routes.draw do
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end
-end

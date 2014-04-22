@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Books list</title>
+</head>
+<body>
+
+  <h1>This is to show books list / Wk3 homework</h1>
+  <% all_books = Book.read %>
+  <table border="1" >
+  	<thead>
+		<tr>
+			<th>Title</th>
+			<th>Author</th>
+		</tr>
+	</thead>
+	<tbody>
+		<% all_books.each do |books| %>
+		<tr>
+		<td><%= books.title %></td>
+		<td><%= books.author %></td>
+		</tr>
+		<% end %>
+	</tbody>
+</table>
+
+</body>
+</html>
